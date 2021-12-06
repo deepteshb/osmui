@@ -1,0 +1,43 @@
+{% extends 'base.html' %} {% block content %}
+<div class="container-fluid" style="margin-top:60px">
+    <div class="row text-white ">
+        <h1 class="animate__animated animate__fadeInLeft">Let's setup the APM Server. Select your Base Infrastructure.</h1>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col text-white animate__animated animate__fadeInLeft animate__delay-2s">
+            <div class="card" style="width:18rem;">
+                <div class="card-body text-white">
+                    <h5 class="card-title text-primary"><i class="fab fa-aws text-primary"></i> Amazon Web Services</h5>
+                    <div>
+                        <p class="card-text text-primary">Deploy a containerized APM server on your EKS or ECS.</p>
+                        <a class="btn btn-primary card-body btn-sm " href="#" onclick="" role="button">Create APM Server</a>>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col text-white animate__animated animate__fadeInLeft animate__delay-3s">
+            <div class="card" style="width:18rem;">
+                <div class="card-body text-white">
+                    <h5 class="card-title text-primary"><i class="fab fa-microsoft text-primary"></i> MS Azure</h5>
+                    <div>
+                        <p class="card-text text-primary">Deploy a containerized APM server on your Microsoft Azure.</p>
+                        <a class="btn btn-primary card-body btn-sm " href="#" onclick="" role="button">Create APM Server</a>>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col text-white animate__animated animate__fadeInLeft animate__delay-4s">
+            <div class="card" style="width:18rem;">
+                <div class="card-body text-white">
+                    <h5 class="card-title text-primary"><i class="fab fa-google text-primary"></i> Google Services</h5>
+                    <div>
+                        <p class="card-text text-primary">Deploy a containerized APM server on your Google Infrastructure.</p>
+                        <a class="btn btn-primary card-body btn-sm " href="#" onclick="" role="button">Create APM Server</a>>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
