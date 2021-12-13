@@ -1,8 +1,0 @@
-{% extends 'base.html' %}
-{% block content %}
-<div class="container-fluid p-5">
-    <iframe class="col col-lg-12" style="height:900px;" src="https://demo.elastic.co/app/security/overview?sourcerer=(default:!(%27apm-*-transaction*%27,%27auditbeat-*%27,%27filebeat-*%27,%27packetbeat-*%27,%27winlogbeat-*%27))&timerange=(global:(linkTo:!(timeline),timerange:(from:%272021-12-05T18:51:42.128Z%27,fromStr:now-24h,kind:relative,to:%272021-12-06T18:51:42.129Z%27,toStr:now)),timeline:(linkTo:!(global),timerange:(from:%272021-12-05T18:51:42.128Z%27,fromStr:now-24h,kind:relative,to:%272021-12-06T18:51:42.129Z%27,toStr:now)))" title="Welcome to OSM Grafana"></iframe>
-</div>
-{% endblock %}
-
-
