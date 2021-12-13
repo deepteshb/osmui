@@ -1,4 +1,5 @@
-from flask import Flask, render_template,session,url_for,g
+from flask import Flask, render_template,session,url_for,g, redirect
+
 
 app = Flask(__name__)
 
@@ -13,6 +14,19 @@ def firstrun():
 @app.route("/setup", methods = ['GET','POST'])
 def setup():
     return render_template('setup.html')
+
+@app.route("/kibana", methods = ['GET','POST'])
+def kibana():
+    return render_template('kibana.html')
+
+@app.route("/login", methods = ['GET','POST'])
+def login():
+    return render_template('login.html')
+
+@app.route("/register", methods = ['GET','POST'])
+def register():
+    return render_template('register.html')
+
 
 if __name__ == '__main__':
     app.run_server(debug=True)
