@@ -1,5 +1,6 @@
 /osmdev
 /venv
+_pycache_
 
 # Local .terraform directories
 **/.terraform/*
